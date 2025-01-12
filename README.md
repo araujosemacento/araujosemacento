@@ -2,9 +2,7 @@
 
 Sou estudante do curso de Sistemas e Mídias Digitais na Universidade Federal do Ceará, atualmente cursando o quinto semestre. Sempre tive afinidade com tecnologia e desde criança sabia que queria trabalhar com computadores, mas não procuro programar simplesmente por ser bom nisso, afinal, às vezes me pergunto se realmente levo jeito pra isso, assim como todo programador. De qualquer forma, sigo em frente porque gosto de fazer algo que possa ter a chance de chegar a ser útil para as outras pessoas e bonito/intuitivo o suficiente para que seja aquela primeira ferramenta que pensamos em usar numa situação específica, ou aquela que tentamos lembrar o nome porque gostamos de usar daquela vez, um tempo atrás, tipo ↓`isso`↓.
 
-<div align="center">
-  <img src="[https://i.kym-cdn.com/photos/images/original/001/264/701/bbd.gif" alt="Useful Volume Slider"/>
-</div>
+  ![Useful Volmu Slider](https://i.kym-cdn.com/photos/images/original/001/264/701/bbd.gif)
 
 ## 💻 Sobre trabalho
 
