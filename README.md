@@ -1,16 +1,16 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Sans&weight=500&size=24&duration=2000&pause=2000&color=4C28B8EA&center=true&vCenter=true&repeat=false&random=true&width=500&lines=Bem-vindo%2C+meu+nome+%C3%A9+Gabriel+Melo!+%F0%9F%91%8B)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Sans&weight=500&size=24&duration=2000&pause=2000&color=4C28B8EA&center=true&vCenter=true&repeat=false&random=true&width=750&lines=Bem-vindo%2C+meu+nome+%C3%A9+Gabriel+Melo!+%F0%9F%91%8B)](https://git.io/typing-svg)
 
 Sou estudante do curso de Sistemas e Mídias Digitais na Universidade Federal do Ceará, atualmente cursando o quinto semestre. Sempre tive afinidade com tecnologia e desde criança sabia que queria trabalhar com computadores, mas não procuro programar simplesmente por ser bom nisso, afinal, às vezes me pergunto se realmente levo jeito pra coisa, assim como todo programador. De qualquer forma, sigo em frente porque gosto de fazer algo que possa ter a chance de chegar a ser útil para as outras pessoas ainda sendo bonito/intuitivo o suficiente para que seja aquela primeira ferramenta que pensamos em usar numa situação específica, ou aquela que tentamos lembrar o nome porque gostamos de usar daquela vez, um tempo atrás, tipo ↓`isso`↓.
 
-  ![Useful Volmu Slider](https://i.kym-cdn.com/photos/images/original/001/264/701/bbd.gif)
+  ![Useful Volume Slider](https://i.kym-cdn.com/photos/images/original/001/264/701/bbd.gif)
 
 ## 💻 Sobre trabalho
 
-Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num conceituado laboratório chamado [LEAD](https://leadfortaleza.com.br), baseado em Fortaleza, Ceará <img src="https://www.pikpng.com/pngl/b/532-5323009_flag-map-of-cear-governo-do-estado-do.png" alt="Mapa do Ceará" width="20"/>📍. O Lead surgiu de um convênio entre a [Universidade Estadual do Ceará](https://www.ufc.br/a-universidade) e a empresa [Dell](https://www.dell.com/pt-br/dt/corporate/about-us/who-we-are.htm), visando formular soluções tecnológicas que amparem indivíduos portadores de deficiência visual, auditiva, física, intelectual e cognitiva.
+Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num conceituado laboratório chamado [LEAD](https://leadfortaleza.com.br), baseado em Fortaleza, Ceará <img src="https://www.pikpng.com/pngl/b/532-5323009_flag-map-of-cear-governo-do-estado-do.png" alt="Mapa do Ceará" width="15"/>📍. O Lead surgiu de um convênio entre a [Universidade Estadual do Ceará](https://www.ufc.br/a-universidade) e a empresa [Dell](https://www.dell.com/pt-br/dt/corporate/about-us/who-we-are.htm), visando formular soluções tecnológicas que amparem indivíduos portadores de deficiência visual, auditiva, física, intelectual e cognitiva.
 
 ## 🚀 Sobre mim
 
-- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em Sitemas e Mídias Digitais na <img src="https://www.pngkit.com/png/full/43-439423_ufc-logo-universidade-federal-university-of-cear.png" alt="UFC" width="40"/>.
+- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em Sitemas e Mídias Digitais na <img src="https://www.pngkit.com/png/full/43-439423_ufc-logo-universidade-federal-university-of-cear.png" alt="UFC" width="30"/>.
 - 💻 Sou bolsista de suporte num laboratório de pesquisa e estou procurando uma chance de embarcar oficialmente no mercado de Desenvolvimento FrontEnd/BackEnd/FullStack, sem deixar meus projetos pessoais de lado, se possível.
 - 📈 Pra este ano de 2025, tenho dois objetivos bem simples, o primeiro deles sendo mergulhar em mais tecnologias úteis que complementem o que já vi, como Ruby e Ruby on Rails, Selenium, quem sabe até algo relacionado a sistemas embarcados.
 - ✌️ O segundo objetivo é me tornar um desenvolvedor FullStack, mas não só isso, quero muito dar de volta à comunidade todo o apoio que consegui acumular nos últimos meses em que tive um crescimento exponencial, então nada me deixaria mais orgulhoso do que ver essas estatísticas expostas aqui embaixo aumentando cada vez mais ao longo do ano. ❤️
