@@ -31,7 +31,7 @@
 
   <summary>🛠️ Clique na seta a esquerda para visualizar todos os <a href="https://skillicons.dev">ícones</a>.</summary>
 
-<piture><img alt="My Skills" src="https://skillicons.dev/icons?i=html,css,js,sass,react,nodejs,nextjs,npm,angular,spring,java,mysql,bash,git,docker,androidstudio,kotlin,arduino,aws,azure,gcp,ai,ps,autocad,nginx,postman,processing,py,raspberrypi,vscode&perline=6" style="margin: auto; width: 50%; padding: 10px 20px;"/></picture>
+<picture><img alt="Skills" src="https://skillicons.dev/icons?i=html,css,js,sass,react,nodejs,nextjs,npm,angular,spring,java,mysql,bash,git,docker,androidstudio,kotlin,arduino,aws,azure,gcp,ai,ps,autocad,nginx,postman,processing,py,raspberrypi,vscode&perline=6" style="margin: auto; width: 50%; padding: 10px 20px;"/></picture>
 
 </details>
 
