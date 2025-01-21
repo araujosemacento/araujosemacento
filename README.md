@@ -1,4 +1,4 @@
-# Bem-vindo, meu nome é Gabriel Melo! 👋
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Sans&weight=500&size=24&duration=2000&pause=2000&color=4C28B8EA&center=true&vCenter=true&repeat=false&random=true&width=500&lines=Bem-vindo%2C+meu+nome+%C3%A9+Gabriel+Melo!+%F0%9F%91%8B)](https://git.io/typing-svg)
 
 Sou estudante do curso de Sistemas e Mídias Digitais na Universidade Federal do Ceará, atualmente cursando o quinto semestre. Sempre tive afinidade com tecnologia e desde criança sabia que queria trabalhar com computadores, mas não procuro programar simplesmente por ser bom nisso, afinal, às vezes me pergunto se realmente levo jeito pra coisa, assim como todo programador. De qualquer forma, sigo em frente porque gosto de fazer algo que possa ter a chance de chegar a ser útil para as outras pessoas ainda sendo bonito/intuitivo o suficiente para que seja aquela primeira ferramenta que pensamos em usar numa situação específica, ou aquela que tentamos lembrar o nome porque gostamos de usar daquela vez, um tempo atrás, tipo ↓`isso`↓.
 
@@ -6,7 +6,7 @@ Sou estudante do curso de Sistemas e Mídias Digitais na Universidade Federal do
 
 ## 💻 Sobre trabalho
 
-Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num conceituado laboratório chamado LEAD, baseado em Fortaleza, Ceará. O Lead surgiu de um convênio entre a Universidade Estadual do Ceará e a empresa Dell, visando formular soluções tecnológicas que amparem indivíduos portadores de deficiência visual, auditiva, física, intelectual e cognitiva.
+Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num conceituado laboratório chamado [LEAD](https://leadfortaleza.com.br), baseado em Fortaleza, Ceará <img src="https://www.pikpng.com/pngl/b/532-5323009_flag-map-of-cear-governo-do-estado-do.png" alt="Mapa do Ceará" width="20"/>📍. O Lead surgiu de um convênio entre a [Universidade Estadual do Ceará](https://www.ufc.br/a-universidade) e a empresa [Dell](https://www.dell.com/pt-br/dt/corporate/about-us/who-we-are.htm), visando formular soluções tecnológicas que amparem indivíduos portadores de deficiência visual, auditiva, física, intelectual e cognitiva.
 
 ## 🚀 Sobre mim
 
