@@ -10,7 +10,7 @@ Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num con
 
 ## 🚀 Sobre mim
 
-- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em [Sitemas e Mídias Digitais](https://smd.ufc.br/pt/) na <span class="ufc-logo">UFC</span>.
+- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em [Sitemas e Mídias Digitais](https://smd.ufc.br/pt/) na <picture><source media="(prefers-color-scheme: dark)" srcset="https://biblioteca.ufc.br/wp-content/uploads/2023/08/logohorizontalufcsimples-branco.png"><source media="(prefers-color-scheme: light)" srcset="https://biblioteca.ufc.br/wp-content/uploads/2023/08/logohorizontalufcsimples-azulmarinho.png"><img alt="UFC Logo" src="https://logodownload.org/wp-content/uploads/2016/09/ufc-logo-universidade-14.png" width="32"></picture>.
 - 💻 Sou bolsista de suporte num laboratório de pesquisa e estou procurando uma chance de embarcar oficialmente no mercado de Desenvolvimento FrontEnd/BackEnd/FullStack, sem deixar meus projetos pessoais de lado, se possível.
 - 📈 Pra este ano de 2025, tenho dois objetivos bem simples, o primeiro deles sendo mergulhar em mais tecnologias úteis que complementem o que já vi, como Ruby e Ruby on Rails, Selenium, quem sabe até algo relacionado a sistemas embarcados.
 - ✌️ O segundo objetivo é me tornar um desenvolvedor FullStack, mas não só isso, quero muito dar de volta à comunidade todo o apoio que consegui acumular nos últimos meses em que tive um crescimento exponencial, então nada me deixaria mais orgulhoso do que ver essas estatísticas expostas aqui embaixo aumentando cada vez mais ao longo do ano. ❤️
@@ -64,17 +64,3 @@ Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num con
 ###### Para propostas profissionais, entre em contato através [deste endereço de e-mail](gabrielmeloentries@gmail.com). 
 
 ### Um abraço e até a próxima~~ 👋🍃
-
-<script>
-    function alterarLogoPorTema() {
-        const ufcLogoSpan = document.querySelector('.ufc-logo');
-        
-        const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark').matches
-        if (isDarkMode) {
-            ufcLogoSpan.innerHTML = '<img src="https://biblioteca.ufc.br/wp-content/uploads/2023/08/logohorizontalufcsimples-branco.png" alt="UFC" width="32">';
-        } else {
-            ufcLogoSpan.innerHTML = '<img src="https://biblioteca.ufc.br/wp-content/uploads/2023/08/logohorizontalufcsimples-azulmarinho.png" alt="UFC" width="32">';
-        }
-    
-    window.addEventListener('load', alterarLogoPorTema);
-</script>
