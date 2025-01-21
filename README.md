@@ -6,11 +6,11 @@ Sou estudante do curso de Sistemas e Mídias Digitais na Universidade Federal do
 
 ## 💻 Sobre trabalho
 
-Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num conceituado laboratório chamado [LEAD](https://leadfortaleza.com.br), baseado em Fortaleza, Ceará <img src="https://www.pikpng.com/pngl/b/532-5323009_flag-map-of-cear-governo-do-estado-do.png" alt="Mapa do Ceará" width="15"/>📍. O Lead surgiu de um convênio entre a [Universidade Estadual do Ceará](https://www.ufc.br/a-universidade) e a empresa [Dell](https://www.dell.com/pt-br/dt/corporate/about-us/who-we-are.htm), visando formular soluções tecnológicas que amparem indivíduos portadores de deficiência visual, auditiva, física, intelectual e cognitiva.
+Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num conceituado laboratório chamado [LEAD](https://leadfortaleza.com.br), baseado em Fortaleza, Ceará <img src="https://www.pikpng.com/pngl/b/532-5323009_flag-map-of-cear-governo-do-estado-do.png" alt="Mapa do Ceará" width="10"/>📍. O Lead surgiu de um convênio entre a [Universidade Estadual do Ceará](https://www.ufc.br/a-universidade) e a empresa [Dell](https://www.dell.com/pt-br/dt/corporate/about-us/who-we-are.htm), visando formular soluções tecnológicas que amparem indivíduos portadores de deficiência visual, auditiva, física, intelectual e cognitiva.
 
 ## 🚀 Sobre mim
 
-- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em Sitemas e Mídias Digitais na <img src="https://www.pngkit.com/png/full/43-439423_ufc-logo-universidade-federal-university-of-cear.png" alt="UFC" width="30"/>.
+- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em Sitemas e Mídias Digitais na <img src="https://www.pngkit.com/png/full/43-439423_ufc-logo-universidade-federal-university-of-cear.png" alt="UFC" width="32"/>.
 - 💻 Sou bolsista de suporte num laboratório de pesquisa e estou procurando uma chance de embarcar oficialmente no mercado de Desenvolvimento FrontEnd/BackEnd/FullStack, sem deixar meus projetos pessoais de lado, se possível.
 - 📈 Pra este ano de 2025, tenho dois objetivos bem simples, o primeiro deles sendo mergulhar em mais tecnologias úteis que complementem o que já vi, como Ruby e Ruby on Rails, Selenium, quem sabe até algo relacionado a sistemas embarcados.
 - ✌️ O segundo objetivo é me tornar um desenvolvedor FullStack, mas não só isso, quero muito dar de volta à comunidade todo o apoio que consegui acumular nos últimos meses em que tive um crescimento exponencial, então nada me deixaria mais orgulhoso do que ver essas estatísticas expostas aqui embaixo aumentando cada vez mais ao longo do ano. ❤️
