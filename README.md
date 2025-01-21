@@ -10,7 +10,7 @@ Okay, mas brincadeiras a parte, atualmente atuo como Bolsista de Suporte num con
 
 ## 🚀 Sobre mim
 
-- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em Sitemas e Mídias Digitais na <img src="https://www.pngkit.com/png/full/43-439423_ufc-logo-universidade-federal-university-of-cear.png" alt="UFC" width="32"/>.
+- 🔭 Como supracitado, atualmente estou em busca de me graduar como bacharel em Sitemas e Mídias Digitais na <span class="ufc-logo">UFC</span>.
 - 💻 Sou bolsista de suporte num laboratório de pesquisa e estou procurando uma chance de embarcar oficialmente no mercado de Desenvolvimento FrontEnd/BackEnd/FullStack, sem deixar meus projetos pessoais de lado, se possível.
 - 📈 Pra este ano de 2025, tenho dois objetivos bem simples, o primeiro deles sendo mergulhar em mais tecnologias úteis que complementem o que já vi, como Ruby e Ruby on Rails, Selenium, quem sabe até algo relacionado a sistemas embarcados.
 - ✌️ O segundo objetivo é me tornar um desenvolvedor FullStack, mas não só isso, quero muito dar de volta à comunidade todo o apoio que consegui acumular nos últimos meses em que tive um crescimento exponencial, então nada me deixaria mais orgulhoso do que ver essas estatísticas expostas aqui embaixo aumentando cada vez mais ao longo do ano. ❤️
