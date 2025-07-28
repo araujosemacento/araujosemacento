@@ -10,5 +10,6 @@
     "spotify",
     "srcset",
     "tras"
-  ]
+  ],
+  "markdown.validate.enabled": true
 }
