@@ -1,4 +1,4 @@
-# [![Bem-vindo 👋](https://readme-typing-svg.demolab.com?font=Noto+Sans+Mono&weight=700&size=96&duration=1500&pause=5000&color=A41BF7&center=true&vCenter=true&random=true&width=1024&height=240&lines=Bem-vindo%F0%9F%91%8B)](. "Bem-vindo 👋")
+# [![Bem-vindo 👋](https://readme-typing-svg.demolab.com?font=Noto+Sans+Mono&weight=700&size=96&duration=1500&pause=5000&color=A41BF7&center=true&vCenter=true&random=true&width=1024&height=240&lines=Bem-vindo%F0%9F%91%8B)](./Brazilian_Portuguese.md "Bem-vindo 👋")
 
 ###### Gráfico gerado por [readme-typing-svg](https://git.io/typing-svg "Link do Repositório no Github"). Confira você mesmo e apoie o autor, caso tenha gostado!
 
