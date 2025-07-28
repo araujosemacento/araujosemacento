@@ -16,7 +16,5 @@ export default defineConfig({
       noExternal: ['webcoreui'],
     },
   },
-  integrations: [
-    svelte()
-  ]
+  integrations: [svelte()],
 });

@@ -1,4 +1,12 @@
 {
-  "cSpell.words": ["Conteudo", "descricao", "fixlint", "Webcore", "webcoreui"],
+  "cSpell.words": [
+    "Conteudo",
+    "descricao",
+    "fixlint",
+    "wdth",
+    "Webcore",
+    "webcoreui",
+    "wght"
+  ],
   "markdown.validate.enabled": true
 }
