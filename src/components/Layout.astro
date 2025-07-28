@@ -1,0 +1,30 @@
+---
+import { astroI18n } from 'astro-i18n';
+
+const lang = astroI18n.locale;
+---
+
+<html lang={lang}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>araujosemacento</title>
+  </head>
+  <body>
+    <main class="container">
+      <slot />
+    </main>
+  </body>
+</html>
+
+<style lang="scss" is:global>
+  @use 'webcoreui/styles' as *;
+  @include setup(
+    (
+      fontRegular: '/fonts/Inter-Regular.woff2',
+      fontBold: '/fonts/Inter-Bold.woff2',
+    )
+  );
+</style>

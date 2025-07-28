@@ -1,0 +1,33 @@
+---
+import { Button, Icon } from 'webcoreui/astro';
+import Layout from '@components/Layout.astro';
+import { t } from 'astro-i18n';
+---
+
+<Layout>
+  <h1 class="flex center md">
+    {t('hello')}
+    <img src="logo.svg" width="160" />
+  </h1>
+  <p>{t('welcome')}</p>
+  <Button href="https://webcoreui.dev" target="_blank" rel="noopener noreferrer">
+    Get Started
+  </Button>
+  <Button
+    href="https://github.com/Frontendland/webcoreui"
+    target="_blank"
+    rel="noopener noreferrer"
+    theme="secondary"
+  >
+    <Icon type="github" size={20} />
+    GitHub
+  </Button>
+</Layout>
+
+<style lang="scss">
+  @use 'webcoreui/config' as *;
+
+  p {
+    @include typography(center);
+  }
+</style>

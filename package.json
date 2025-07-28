@@ -1,0 +1,36 @@
+{
+  "name": "temp",
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "bunx --bun astro dev",
+    "start": "bunx --bun astro dev",
+    "build": "bunx --bun astro check && bunx --bun astro build",
+    "preview": "bunx --bun astro preview",
+    "astro": "bunx --bun astro",
+    "format": "prettier --write .",
+    "check": "prettier --check .",
+    "clean": "rimraf dist && rimraf .astro && rimraf node_modules/.cache",
+    "i18n:extract": "astro-i18n extract",
+    "i18n:generate:pages": "astro-i18n generate:pages --purge",
+    "i18n:generate:types": "astro-i18n generate:types",
+    "i18n:sync": "npm run i18n:generate:pages && npm run i18n:generate:types",
+    "i18n": "bun run i18n:extract && bun run i18n:sync"
+  },
+  "dependencies": {
+    "@astrojs/check": "0.9.4",
+    "@astrojs/svelte": "^7.1.0",
+    "astro": "5.12.4",
+    "astro-i18n": "^2.2.4",
+    "sass": "1.86.0",
+    "svelte": "^5.37.0",
+    "typescript": "^5.8.3",
+    "webcoreui": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.19",
+    "jiti": "^2.5.1",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1"
+  }
+}

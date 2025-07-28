@@ -1,15 +1,4 @@
 {
-  "cSpell.words": [
-    "brar",
-    "chan",
-    "cres",
-    "fren",
-    "lhar",
-    "ples",
-    "Sitemas",
-    "spotify",
-    "srcset",
-    "tras"
-  ],
+  "cSpell.words": ["Conteudo", "descricao", "fixlint", "Webcore", "webcoreui"],
   "markdown.validate.enabled": true
 }

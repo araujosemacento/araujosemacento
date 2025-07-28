@@ -1,0 +1,13 @@
+{
+  "extends": "astro/tsconfigs/base",
+  "compilerOptions": {
+    "strict": true,
+    "baseUrl": ".",
+    "strictNullChecks": true,
+    "moduleResolution": "bundler",
+    "paths": {
+      "@components/*": ["src/components/*"]
+    }
+  },
+  "include": ["src", ".astro/content.d.ts"]
+}
