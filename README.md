@@ -13,3 +13,143 @@ This github repository is a personal space to showcase my portfolio, alongside t
 - [English](./locales/English.md) | [Brazilian Portuguese](./locales/Brazilian_Portuguese.md) [![Language Tooltip](./locales/Tooltip.svg)](./locales/Brazilian_Portuguese.md 'Inglês | Português Brasileiro')
 
 ###### Currently the whole repo is under development, so some links may lead to unfinished documents or sections. Please be patient as I work on improving the content! [![Language Tooltip](./locales/Tooltip.svg)](./locales/Brazilian_Portuguese.md 'Atualmente todo o repositório está em desenvolvimento, então alguns links podem levar a documentos ou seções não finalizadas. Por favor, seja paciente enquanto trabalho na melhoria do conteúdo!')
+
+## 💫 About Me:
+
+🔭 Currently expanding my tech stack with some exciting recent additions: Svelte, Astro, and diving deep into embedded systems (mainly Arduino and MicroPython). Always building and learning something new.
+
+👯 Looking to collaborate on social projects that promote open-source environments and raise awareness about both the benefits and warning signs in AI development progress.
+
+🤝 Happy to help localize, promote, or expand projects by adding regional flavor to content. Celebrating different cultures feels especially important in these troubled times.
+
+🌱 Finally getting around to learning TypeScript (better late than never!). I believe progress matters more than reaching the destination quickly.
+
+⚡ Fun fact: I'm currently writing a university article on mental health among teenagers and young adults within digital social bubbles.
+
+💬 Feel free to discuss any of these topics with me. As Orwell noted in 1984: "In Newspeak there is no word for 'Science.'" [Maybe it's time for all of us to push back against the party.](https://marioamaggioni.wordpress.com/2015/03/06/science-and-the-principles-of-newspeak-by-george-orwell/#:~:text=branches%2E-,There,blasphemy)
+
+---
+
+### 🌐 Socials:
+
+<div align="center" justify-content="center">
+
+[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/araujo.sem.acento) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/araujosemacento) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:araujosemacento@alu.ufc.br)
+
+</div>
+
+---
+
+### 💻 Tech Stack:
+
+<p align="center">
+<details>
+<summary><b>Linguagens de Programação / Marcação</b></summary>
+
+[![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=flat&logo=html5&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=flat&logo=css3&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=flat&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=flat&logo=typescript&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=flat&logo=python&logoColor=ffdd54) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=flat&logo=openjdk&logoColor=white) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=flat&logo=kotlin&logoColor=white) ![C](https://img.shields.io/badge/c-%2300599C.svg?style=flat&logo=c&logoColor=white) ![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=flat&logo=markdown&logoColor=white)](./README.md)
+</details>
+
+<details>
+<summary><b>Frameworks e Bibliotecas Front-End</b></summary>
+
+[![React](https://img.shields.io/badge/react-%2320232a.svg?style=flat&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/Next-black?style=flat&logo=next.js&logoColor=white) ![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=flat&logo=angular&logoColor=white) ![Svelte](https://img.shields.io/badge/svelte-%23f1413d.svg?style=flat&logo=svelte&logoColor=white) ![SvelteKit](https://img.shields.io/badge/sveltekit-%23ff3e00.svg?style=flat&logo=svelte&logoColor=white) ![Astro](https://img.shields.io/badge/astro-%232C2052.svg?style=flat&logo=astro&logoColor=white) ![Alpine.js](https://img.shields.io/badge/alpinejs-white.svg?style=flat&logo=alpinedotjs&logoColor=%238BC0D0) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=flat&logo=jquery&logoColor=white) ![P5js](https://img.shields.io/badge/p5.js-ED225D?style=flat&logo=p5.js&logoColor=FFFFFF)](./README.md)
+</details>
+
+<details>
+<summary><b>Frameworks Back-End</b></summary>
+
+[![Spring Boot](https://img.shields.io/badge/spring%20boot-%236DB33F.svg?style=flat&logo=spring-boot&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=flat&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=flat&logo=fastapi) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=flat&logo=flask&logoColor=white) ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=flat&logo=node.js&logoColor=white)](./README.md)
+</details>
+
+<details>
+<summary><b>Estilização e UI</b></summary>
+
+[![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=flat&logo=tailwind-css&logoColor=white) ![Bootstrap](https://img.shields.io/badge/bootstrap-%238511FA.svg?style=flat&logo=bootstrap&logoColor=white) ![Bulma](https://img.shields.io/badge/bulma-00D0B1?style=flat&logo=bulma&logoColor=white) ![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=flat&logo=SASS&logoColor=white) ![SCSS](https://img.shields.io/badge/SCSS-hotpink.svg?style=flat&logo=SASS&logoColor=white) ![Less](https://img.shields.io/badge/less-2B4C80?style=flat&logo=less&logoColor=white) ![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=flat&logo=styled-components&logoColor=white) ![MUI](https://img.shields.io/badge/MUI-%230081CB.svg?style=flat&logo=mui&logoColor=white) ![Radix UI](https://img.shields.io/badge/radix%20ui-161618.svg?style=flat&logo=radix-ui&logoColor=white)](./README.md)
+</details>
+
+<details>
+<summary><b>Banco de Dados</b></summary>
+
+[![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=flat&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=flat&logo=postgresql&logoColor=white) ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat&logo=mongodb&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase)](./README.md)
+</details>
+
+<details>
+<summary><b>Ferramentas de Desenvolvimento</b></summary>
+
+[![Git](https://img.shields.io/badge/git-%23F05033.svg?style=flat&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=flat&logo=github&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=flat&logo=githubactions&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=flat&logo=docker&logoColor=white) ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=flat&logo=vite&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=flat&logo=npm&logoColor=white) ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=flat&logo=yarn&logoColor=white) ![PNPM](https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=flat&logo=pnpm&logoColor=f69220) ![Bun](https://img.shields.io/badge/Bun-%23000000.svg?style=flat&logo=bun&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=flat&logo=eslint&logoColor=white) ![Prettier](https://img.shields.io/badge/prettier-%23F7B93E.svg?style=flat&logo=prettier&logoColor=black) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=flat&logo=postman&logoColor=white) ![Gradle](https://img.shields.io/badge/Gradle-02303A.svg?style=flat&logo=Gradle&logoColor=white)](./README.md)
+</details>
+
+<details>
+<summary><b>Cloud e Hospedagem</b></summary>
+
+[![AWS](https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat&logo=amazon-aws&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=flat&logo=vercel&logoColor=white) ![Firebase](https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat&logo=firebase) ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=flat&logo=oracle&logoColor=white)](./README.md)
+</details>
+
+<details>
+<summary><b>Design</b></summary>
+
+[![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=flat&logo=adobe%20photoshop&logoColor=white) ![Adobe Illustrator](https://img.shields.io/badge/adobe%20illustrator-%23FF9A00.svg?style=flat&logo=adobe%20illustrator&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat&logo=figma&logoColor=white)](./README.md)
+</details>
+
+<details>
+<summary><b>Sistemas Embarcados</b></summary>
+
+[![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=flat&logo=Arduino&logoColor=white) ![Raspberry Pi](https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=flat&logo=Raspberry-Pi) ![MicroPython](https://img.shields.io/badge/micropython-2C3A3A?style=flat&logo=micropython&logoColor=white)](./README.md)
+</details>
+
+</p>
+
+---
+
+### 📊 GitHub Stats:
+
+<div align="center" justify-content="center">
+
+![Github Stats](https://github-readme-stats.vercel.app/api?username=araujosemacento&theme=radical&hide_border=false&include_all_commits=false&count_private=true)
+
+![Current Streak](https://nirzak-streak-stats.vercel.app/?user=araujosemacento&theme=radical&hide_border=false)
+
+![Most Used Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=araujosemacento&theme=radical&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+</div>
+
+---
+
+<div align="center" justify-content="center">
+
+### 🏆 GitHub Trophies
+
+![Github Trophies](https://github-profile-trophy.vercel.app/?username=araujosemacento&row=2&column=4&theme=radical)
+
+</div>
+
+---
+
+<div align="center" justify-content="center">
+
+### ✍️ Random Dev Quote
+
+![Random Dev Quote](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+
+</div>
+
+---
+
+<div align="center" justify-content="center">
+
+### 🔝 Top Contributed Repo
+
+![Top Contributed Repo](https://github-contributor-stats.vercel.app/api?username=araujosemacento&limit=5&theme=radical&combine_all_yearly_contributions=true)
+
+</div>
+
+---
+
+###### Proudly created with [GPRM]( https://gprm.itsvg.in )
+
+<div align="center" justify-content="center">
+
+<!-- markdownlint-disable-next-line -->
+[![](https://visitcount.itsvg.in/api?id=araujosemacento&icon=2&color=11)](https://visitcount.itsvg.in)
+
+</div>
