@@ -7,6 +7,14 @@
 
 <br><br>
 
+<picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.gif">
+    <source media="(prefers-color-scheme: light)" srcset="./github-contribution-grid-snake.gif">
+    <img alt="github-contribution-grid-snake" src="./github-contribution-grid-snake.gif">
+</picture>
+
+<br><br>
+
 <details>
 <summary><b>🔍 Mais detalhes / About Me</b></summary>
 <br>

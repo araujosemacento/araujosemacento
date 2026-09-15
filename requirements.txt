@@ -1,1 +1,3 @@
 git+https://github.com/x0rzavi/github-readme-terminal.git@main
+python-dotenv
+requests

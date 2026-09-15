@@ -8,6 +8,8 @@ on:
     paths-ignore:
       - 'README.md'
       - 'output.gif'
+      - 'github-contribution-grid-snake.gif'
+      - 'github-contribution-grid-snake-dark.gif'
   workflow_dispatch:
   schedule:
     - cron: '0 3 * * 1'
@@ -36,8 +38,18 @@ jobs:
           GIFOS_GENERAL_LOOP_COUNT: 1
           GIFOS_GENERAL_COLOR_SCHEME: "dracula"
 
+      - name: Generate Snake Animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            github-contribution-grid-snake.gif
+            github-contribution-grid-snake-dark.gif?palette=github-dark
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
+
       - name: Update readme
         run: |
-          git add README.md output.gif
+          git add README.md output.gif github-contribution-grid-snake.gif github-contribution-grid-snake-dark.gif
           git -c "user.name=github-actions[bot]" -c "user.email=41898282+github-actions[bot]@users.noreply.github.com" commit -m "Automatically updated on $(TZ='America/Fortaleza' date)" || echo "No changes to commit"
           git push
