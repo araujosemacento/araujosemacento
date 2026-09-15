@@ -3,7 +3,9 @@ import os
 # Configura tema Dracula e parâmetros do GIF antes de qualquer import do gifos
 os.environ["GIFOS_GENERAL_COLOR_SCHEME"] = "dracula"
 os.environ["GIFOS_GENERAL_FPS"] = "20"
-os.environ["GIFOS_GENERAL_LOOP_COUNT"] = "1"
+# -1 significa reproduzir uma única vez e congelar.
+# O valor 1 reprodução mais uma vez depois da primeira.
+os.environ["GIFOS_GENERAL_LOOP_COUNT"] = "-1"
 
 import urllib.request
 from datetime import datetime
@@ -81,6 +83,7 @@ def main():
     ensure_fonts()
 
     t = gifos.Terminal(1280, 820, 15, 15, str(FONT_TERMINAL_PATH), 20)
+    t.set_loop_count(-1)
     t.set_prompt(f"\x1b[91m{USERNAME}\x1b[0m@\x1b[93mreadme\x1b[97m:\x1b[92m~\x1b[97m$ \x1b[0m")
 
     t.gen_text("", 1, count=20)
