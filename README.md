@@ -8,9 +8,9 @@
 <br><br>
 
 <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="./github-contribution-grid-snake-dark.gif">
-    <source media="(prefers-color-scheme: light)" srcset="./github-contribution-grid-snake.gif">
-    <img alt="github-contribution-grid-snake" src="./github-contribution-grid-snake.gif">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/araujosemacento/araujosemacento/output/github-contribution-grid-snake-dark.gif">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/araujosemacento/araujosemacento/output/github-contribution-grid-snake.gif">
+    <img alt="github-contribution-grid-snake" src="https://github.com/araujosemacento/araujosemacento/blob/output/github-contribution-grid-snake.gif">
 </picture>
 
 <br><br>

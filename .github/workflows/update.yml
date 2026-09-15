@@ -6,19 +6,17 @@ on:
       - main
       - refactor
     paths-ignore:
-      - 'README.md'
-      - 'output.gif'
-      - 'github-contribution-grid-snake.gif'
-      - 'github-contribution-grid-snake-dark.gif'
+      - "README.md"
+      - "output.gif"
   workflow_dispatch:
   schedule:
-    - cron: '0 3 * * 1'
+    - cron: "0 3 * * 1"
 
 permissions:
   contents: write
 
 jobs:
-  update-readme:
+  terminal:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -38,18 +36,33 @@ jobs:
           GIFOS_GENERAL_LOOP_COUNT: 1
           GIFOS_GENERAL_COLOR_SCHEME: "dracula"
 
-      - name: Generate Snake Animation
+      - name: Update readme
+        run: |
+          git add README.md output.gif
+          git -c "user.name=github-actions[bot]" -c "user.email=41898282+github-actions[bot]@users.noreply.github.com" commit -m "Automatically updated on $(TZ='America/Fortaleza' date)" || echo "No changes to commit"
+          git push
+
+  snake:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate Snake Files
         uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            github-contribution-grid-snake.gif
-            github-contribution-grid-snake-dark.gif?palette=github-dark
+            dist/github-contribution-grid-snake.gif
+            dist/github-contribution-grid-snake-dark.gif?palette=github-dark
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
-
-      - name: Update readme
-        run: |
-          git add README.md output.gif github-contribution-grid-snake.gif github-contribution-grid-snake-dark.gif
-          git -c "user.name=github-actions[bot]" -c "user.email=41898282+github-actions[bot]@users.noreply.github.com" commit -m "Automatically updated on $(TZ='America/Fortaleza' date)" || echo "No changes to commit"
-          git push
+          
+      - name: Push Snake to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN || secrets.GITHUB_TOKEN }}
