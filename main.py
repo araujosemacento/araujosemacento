@@ -267,6 +267,10 @@ def main():
 </picture>
 </div>
 
+<p align="center">
+  <img src="https://profile-counter-iota.vercel.app/api/counter" alt="Visitantes" />
+</p>
+
 ## Sobre mim
 
 #### Quem sou eu
