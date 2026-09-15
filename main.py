@@ -1,4 +1,10 @@
 import os
+
+# Configura tema Dracula e parâmetros do GIF antes de qualquer import do gifos
+os.environ["GIFOS_GENERAL_COLOR_SCHEME"] = "dracula"
+os.environ["GIFOS_GENERAL_FPS"] = "20"
+os.environ["GIFOS_GENERAL_LOOP_COUNT"] = "1"
+
 import urllib.request
 from datetime import datetime
 from pathlib import Path
@@ -9,11 +15,6 @@ try:
     load_dotenv()
 except ImportError:
     pass
-
-# Configura tema Dracula e parâmetros do GIF por padrão
-os.environ.setdefault("GIFOS_GENERAL_COLOR_SCHEME", "dracula")
-os.environ.setdefault("GIFOS_GENERAL_FPS", "20")
-os.environ.setdefault("GIFOS_GENERAL_LOOP_COUNT", "1")
 
 import gifos
 from gifos.utils.schemas.github_user_stats import GithubUserStats
@@ -79,9 +80,8 @@ def get_user_stats(username: str, ignore_repos: list = None) -> GithubUserStats:
 def main():
     ensure_fonts()
 
-    # Terminal ampliado para acomodar inicialização com fonte 18 e restante com fonte 16
-    t = gifos.Terminal(1150, 820, 15, 15, str(FONT_TERMINAL_PATH), 18)
-    t.set_prompt(f"\x1b[0;91m{USERNAME}\x1b[0m@\x1b[0;93mreadme\x1b[0;97m:\x1b[0;92m~\x1b[0;97m$ \x1b[0m")
+    t = gifos.Terminal(1280, 820, 15, 15, str(FONT_TERMINAL_PATH), 20)
+    t.set_prompt(f"\x1b[91m{USERNAME}\x1b[0m@\x1b[93mreadme\x1b[97m:\x1b[92m~\x1b[97m$ \x1b[0m")
 
     t.gen_text("", 1, count=20)
     t.toggle_show_cursor(False)
@@ -111,20 +111,31 @@ def main():
     t.gen_typing_text(".....", 1, contin=True)
     t.gen_text("\x1b[96m", 1, count=0, contin=True)
 
-    # Logo com Silkscreen (Google Fonts)
-    t.set_font(str(FONT_LOGO_PATH), 64)
+    # Logo com Silkscreen (Google Fonts) com centralização
+    orig_xpad = t._Terminal__xpad
+    orig_ypad = t._Terminal__ypad
+    t.set_font(str(FONT_LOGO_PATH), 72)
     os_logo_text = "GABRIEL MELO"
-    mid_row = (t.num_rows + 1) // 2
-    mid_col = (t.num_cols - len(os_logo_text) + 1) // 2
+
+    logo_bbox = t._Terminal__font.getbbox(os_logo_text)
+    logo_w = logo_bbox[2] - logo_bbox[0]
+    logo_h = logo_bbox[3] - logo_bbox[1]
+    t._Terminal__xpad = int((t._Terminal__width - logo_w) / 2 - logo_bbox[0])
+    t._Terminal__ypad = int((t._Terminal__height - logo_h) / 2 - logo_bbox[1])
+    t.num_rows = 1
+    t.num_cols = len(os_logo_text)
+    t._Terminal__col_in_row = {1: 1}
+
     effect_lines = gifos.effects.text_scramble_effect_lines(
         os_logo_text, 3, include_special=False
     )
     for i in range(len(effect_lines)):
-        t.delete_row(mid_row + 1)
-        t.gen_text(effect_lines[i], mid_row + 1, mid_col + 1)
+        t.delete_row(1)
+        t.gen_text(effect_lines[i], 1, 1)
 
-    # Retorna ao terminal com Fira Code
-    t.set_font(str(FONT_TERMINAL_PATH), 16)
+    t._Terminal__xpad = orig_xpad
+    t._Terminal__ypad = orig_ypad
+    t.set_font(str(FONT_TERMINAL_PATH), 18)
     t.clear_frame()
     t.clone_frame(5)
     t.toggle_show_cursor(False)
@@ -193,11 +204,11 @@ def main():
     user_details_lines = f"""
     \x1b[30;105m{USERNAME}@GitHub\x1b[0m
     ----------------------
-    \x1b[96mOS:\x1b[0m     \x1b[93mWeb, Android, Arduino\x1b[0m
+    \x1b[96mOS:\x1b[0m     \x1b[93mWeb, Linux, IoT\x1b[0m
     \x1b[96mHost:\x1b[0m   \x1b[93mUFC #SMD\x1b[0m
     \x1b[96mKernel:\x1b[0m \x1b[93mDeveloper\x1b[0m
     \x1b[96mUptime:\x1b[0m \x1b[93m{user_age.years} years, {user_age.months} months, {user_age.days} days\x1b[0m
-    \x1b[96mIDE:\x1b[0m    \x1b[93mVSCode, Pycharm, Android Studio\x1b[0m
+    \x1b[96mIDE:\x1b[0m    \x1b[93mVSCode, PyCharm\x1b[0m
 
     \x1b[30;105mContact:\x1b[0m
     ----------------------
@@ -210,7 +221,7 @@ def main():
     \x1b[96mRanking:\x1b[0m       \x1b[93mTop {top_tier}% do GitHub\x1b[0m
     \x1b[96mTotal Stars:\x1b[0m   \x1b[93m{git_user_details.total_stargazers}\x1b[0m
     \x1b[96mFollowers:\x1b[0m     \x1b[93m{git_user_details.total_followers}\x1b[0m
-    \x1b[96mTop Langs:\x1b[0m     \x1b[93m{', '.join(top_languages[:6])}\x1b[0m
+    \x1b[96mTop Langs:\x1b[0m     \x1b[93m{', '.join(top_languages[:5])}\x1b[0m
 """
 
 
@@ -224,18 +235,18 @@ def main():
     t.gen_typing_text(f" -u {USERNAME}", 1, contin=True)
 
     t.toggle_show_cursor(False)
-    # Renderiza o Tux Big e as informações lado a lado
-    t.gen_text(tux_art, 2, 1)
-    t.gen_text(user_details_lines, 2, 47, count=5, contin=True)
+    t.gen_text(tux_art, 2, 4)
+    t.gen_text(user_details_lines, 2, 50, count=5, contin=True)
 
     t.toggle_show_cursor(True)
-    t.gen_prompt(28)
+    prompt_row = t.num_rows
+    t.gen_prompt(prompt_row)
     t.gen_typing_text(
         "\x1b[92m# Obrigado pela visita! Tenha um otimo dia :D\x1b[0m",
-        28,
+        prompt_row,
         contin=True,
     )
-    t.gen_text("", 28, count=120, contin=True)
+    t.gen_text("", prompt_row, count=120, contin=True)
 
     t.gen_gif()
 
@@ -246,39 +257,71 @@ def main():
     <img alt="GIFOS" src="output.gif">
 </picture>
 
-<br><br>
-
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-contribution-grid-snake-dark.gif">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-contribution-grid-snake.gif">
     <img alt="github-contribution-grid-snake" src="https://raw.githubusercontent.com/{USERNAME}/{USERNAME}/output/github-contribution-grid-snake.gif">
 </picture>
+</div>
 
-<br><br>
+## Sobre mim
+
+#### Quem sou eu
+```bash
+{USERNAME}@readme:~$ whoami
+```
+- {user_age.years} anos, natural de Fortaleza - Ceará, Brasil.
+- Graduando em **Sistemas e Mídias Digitais** pela Universidade Federal do Ceará (**UFC**).
+- Foco de atuação em desenvolvimento **Front-End**, com experiência **FullStack** e **Sistemas Embarcados**.
+
+#### Contatos
+```bash
+{USERNAME}@readme:~$ contact --list
+```
+<ul>
+<li>
+  <a href="https://github.com/araujosemacento" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-araujosemacento-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub" />
+  </a>
+</li>
+<li>
+  <a href="https://linkedin.com/in/araujosemacento" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-araujosemacento-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+</li>
+<li>
+  <a href="mailto:gabrielmeloentries@gmail.com">
+    <img src="https://img.shields.io/badge/Email-gabrielmeloentries%40gmail.com-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+</li>
+</ul>
+
+#### Tech Stack
+```bash
+{USERNAME}@readme:~$ techstack --table
+```
+| Categoria | Tecnologias |
+| :--- | :--- |
+| **Front-End** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg" alt="Svelte" title="Svelte" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" title="React" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" title="Next.js" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript" title="TypeScript" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="TailwindCSS" title="TailwindCSS" width="28" height="28" /> |
+| **Back-End** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" title="Node.js" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" width="28" height="28" /> |
+| **Banco de Dados** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg" alt="SQLite" title="SQLite" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" title="Firebase" width="28" height="28" /> |
+| **Ferramentas & Habilidades** | <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg" alt="GitHub Actions" title="GitHub Actions" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" title="Figma" width="28" height="28" /> &nbsp; <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg" alt="Arduino" title="Arduino" width="28" height="28" /> |
 
 <details>
-<summary><b>🔍 Mais detalhes / About Me</b></summary>
-<br>
+  <summary><b>Visualizar tecnologias por extenso</b></summary>
 
-### 👨‍💻 Sobre mim
-- 🎓 Graduando em **Sistemas e Mídias Digitais** pela Universidade Federal do Ceará (**UFC**).
-- 🔬 Bolsista de suporte e pesquisa no laboratório **LEAD** (UECE & Dell Technologies).
-- 🚀 Foco em desenvolvimento **FullStack** e sistemas embarcados.
-
-### 🌐 Redes & Contato
-- 💼 **LinkedIn:** [araujosemacento](https://linkedin.com/in/araujosemacento)
-- 📸 **Instagram:** [@araujo.sem.acento](https://instagram.com/araujo.sem.acento)
-- ✉️ **Email:** [araujosemacento@alu.ufc.br](mailto:araujosemacento@alu.ufc.br)
-
-### 🛠️ Principais Tecnologias
-- **Linguagens:** Python, TypeScript, JavaScript, Kotlin, Java, C
-- **Front-End:** React, Svelte, Astro, Next.js, TailwindCSS
-- **Back-End:** FastAPI, Django, Flask, Node.js
-- **Bancos de Dados:** PostgreSQL, MySQL, MongoDB, Firebase
-- **Dev Tools:** Git, Docker, Linux, PyCharm, VSCode
+| Categoria | Tecnologias |
+| :--- | :--- |
+| **Front-End** | <ul><li>Svelte</li><li>React</li><li>Next.js</li><li>TypeScript</li><li>TailwindCSS</li></ul> |
+| **Back-End** | <ul><li>Python</li><li>Node.js</li><li>Java</li></ul> |
+| **Banco de Dados** | <ul><li>PostgreSQL</li><li>MySQL</li><li>SQLite</li><li>Firebase</li></ul> |
+| **Ferramentas & Habilidades** | <ul><li>Git</li><li>GitHub Actions</li><li>Docker</li><li>Linux</li><li>Figma</li><li>Arduino</li></ul> |
 
 </details>
-</div>
+
+<p align="center">
+  <sub>We love <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fedora/fedora-original.svg" alt="Fedora Linux" width="10" height="10" /> in this household</sub>
+</p>
 """
     with open("README.md", "w", encoding="utf-8") as f:
         f.write(readme_file_content)
